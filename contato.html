@@ -4,42 +4,53 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Projeto Portfólio">
-		<meta name="author" content="Generation Brasil">
+		<meta name="author" content="Thainara Cruz">
 		<meta name="keywords" content="HTML, CSS, JavaScript">
+        <!-- Link para a Folha de Estilo da Página - CSS -->
+        <link rel="stylesheet" href="./assets/css/style.css">
 		<title>Meu Perfil</title>
 	</head>
 	<body>
-		<!-- Cabeçalho da Página (header) -->
-		<header>
-			<!-- Div Conteudo do Cabeçalho -->
-			<div id="header_content">
-				<!-- Titulo do Cabeçalho -->
-				<div id="titulo">
-					<!-- Seu nome -->
-					<h1>Thainara Cruz</h1>
-				</div>
+			<!-- Cabeçalho da Página (header) -->
+            <header>
 
-				<!-- Conteudo do Menu da Página (header) -->
-				<div id="menu">
-					<!-- Menu da Página -->
-					<nav>
-						<!-- Marcadores não ordenados + links -->
-						<ul id="menu">
-							<li>
-								<a href="index.html"> Home </a>
-							</li>
-							<li>
-								<a href="contato.html"> Contato </a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</header>
-
+                <!-- Div Conteudo do Cabeçalho -->
+                <div id="header_content" class="flex">
+    
+                    <!-- Titulo do Cabeçalho -->
+                    <div id="titulo">
+    
+                        <!-- Seu nome -->
+                        <h1>Thainara Cruz</h1>
+    
+                    </div>
+    
+                    <!-- Conteudo do Menu da Página (header) -->
+                    <div id="menu">
+    
+                        <!-- Menu da Página -->
+                        <nav>
+    
+                            <!-- Marcadores não ordenados + links -->
+                            <ul id="menu">
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="contato.html">Contato</a>
+                                </li>
+                            </ul>
+    
+                        </nav>
+    
+                    </div>
+    
+                </div>
+    
+            </header>
 		<!-- Seção Principal da Página (main) -->
 		<main>
-			
+			<div id="contact" class="flex"></div>
 			<!-- Seção Formulário de Contato e Redes Sociais -->
 			<section id="contact">
 				
@@ -65,14 +76,14 @@
 					/>
 					<span id="txtEmail"></span>
 
-					<br><label for="subject">Assunto: </label>
+					<label for="subject">Assunto: </label>
 					<input
 						id="subject"
 						type="text"
 						name="subject"
 						placeholder="Digite o título da mensagem"
 						required
-					/><br><br>
+					/>
 					<span id="txtSubject"></span>
 
 					<label for="message">Mensagem: </label>
@@ -88,7 +99,7 @@
 				</form>
 
 				<!-- Seção do Google Maps -->
-				<article id="mapa">
+                <section id="mapa" class="flex_start">
 
 					<div id="endereco">
 						<p>Av. Paulista, 100</p>
@@ -107,27 +118,31 @@
 						id="mapa"
 					>
                     </iframe>
-
-				</article>
+                </section>				
 			</section>
 		</main>
 
 		<!-- Rodapé da Página (footer) -->
-		<footer>
-			<!-- Seção de Contato - Redes Sociais -->
+		<footer class="flex">
+
+			<!-- Seção de Contato - Redes Sociais-->
 			<section id="redes_sociais">
+
 				<a href="">
-					<img src="assets/img/linkedin.svg" alt="LinkedIn" />
+					<img src="assets/img/linkedin.svg" alt="LinkedIn" class="social_icon"/>
 				</a>
 				<a href="">
-					<img src="assets/img/github.svg" alt="Github" />
+					<img src="assets/img/github.svg" alt="Github" class="social_icon"/>
 				</a>
 				<a href="">
-					<img src="assets/img/instagram.svg" alt="Instagram" />
+					<img src="assets/img/instagram.svg" alt="Instagram" class="social_icon"/>
 				</a>
+
 			</section>
 
 			<h3>Feito com 🧡 por Thainara Cruz - 2025</h3>
+
 		</footer>
+
 	</body>
 </html>
